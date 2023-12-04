@@ -2888,7 +2888,7 @@ section.account .wrapper {
 
 .edd_purchase_submit_wrapper {
     position: relative;
-    display: none;
+/*     display: none; */
 }
 
 .edd_purchase_submit_wrapper a.edd-add-to-cart {
