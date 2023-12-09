@@ -2888,7 +2888,11 @@ section.account .wrapper {
 
 .edd_purchase_submit_wrapper {
     position: relative;
+<<<<<<< HEAD
     /* display: none; */
+=======
+/*     display: none; */
+>>>>>>> 57abcfb14476a759b33b6cee0d3d962e7c7ab1e1
 }
 
 .edd_purchase_submit_wrapper a.edd-add-to-cart {
