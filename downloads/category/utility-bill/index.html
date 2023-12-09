@@ -350,7 +350,7 @@ body.custom-background { background-color: #ffffff; }
 	<div id="content" class="site-content">
 
 	
-		<header class="page-header pv-xs-2 pv-sm-3 pv-lg-4 center-xs">
+		<header class="<header class="page-header  center-xs">">
 						<div class="wrapper">
 								<h1 class="download-title">
 											Utility bill									</h1>
@@ -382,32 +382,50 @@ body.custom-background { background-color: #ffffff; }
 <p class="link-more"><a href="../../bill-ee-uk/index.html" class="more-link">Continue reading<span class="screen-reader-text"> &#8220;Bill EE UK&#8221;</span></a></p>
 </div>
 
-	<div class="downloadFooter">
-		<span class="edd_price" id="edd_price_143">&#36;28.00</span><div class="edd_download_buy_button">
-		<form id="edd_purchase_143" class="edd_download_purchase_form edd_purchase_143" method="post">
 
-		
-		<div class="edd_purchase_submit_wrapper">
-			<button class="edd-add-to-cart button edd-submit" data-nonce="e408509259" data-timestamp="1699542835" data-token="f0e1bb5b0384575f66ce93bd055de1edddd81b0cff4ec4cc3bf29bc9ee0e3a6f" data-action="edd_add_to_cart" data-download-id="143" data-variable-price="no" data-price-mode=single data-price="28.00" ><span class="edd-add-to-cart-label">Purchase</span> <span class="edd-loading" aria-label="Loading"></span></button><input type="submit" class="edd-add-to-cart edd-no-js button edd-submit" name="edd_purchase_download" value="Purchase" data-action="edd_add_to_cart" data-download-id="143" data-variable-price="no" data-price-mode=single /><a href="../../../checkout/index.html" class="edd_go_to_checkout button edd-submit" style="display:none;">Checkout</a>
-							<span class="edd-cart-ajax-alert" aria-live="assertive">
-					<span class="edd-cart-added-alert" style="display: none;">
-						<svg class="edd-icon edd-icon-check" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" aria-hidden="true">
-							<path d="M26.11 8.844c0 .39-.157.78-.44 1.062L12.234 23.344c-.28.28-.672.438-1.062.438s-.78-.156-1.06-.438l-7.782-7.78c-.28-.282-.438-.673-.438-1.063s.156-.78.438-1.06l2.125-2.126c.28-.28.672-.438 1.062-.438s.78.156 1.062.438l4.594 4.61L21.42 5.656c.282-.28.673-.438 1.063-.438s.78.155 1.062.437l2.125 2.125c.28.28.438.672.438 1.062z"/>
-						</svg>
-						Added to cart					</span>
-				</span>
-															</div><!--end .edd_purchase_submit_wrapper-->
-
-		<input type="hidden" name="download_id" value="143">
-							<input type="hidden" name="edd_action" class="edd_action_input" value="add_to_cart">
-		
-		
-		
-	</form><!--end #edd_purchase_143-->
+<div class="downloadFooter">
+    <span class="edd_price" id="edd_price_143">&#36;28.00</span>
+    <div class="edd_download_buy_button">
+        <button 
+            class="edd-add-to-cart button edd-submit" 
+            data-nonce="e408509259" 
+            data-timestamp="1699542835" 
+            data-token="f0e1bb5b0384575f66ce93bd055de1edddd81b0cff4ec4cc3bf29bc9ee0e3a6f" 
+            data-action="edd_add_to_cart" 
+            data-download-id="143" 
+            data-variable-price="no" 
+            data-price-mode=single 
+            data-price="28.00"
+            onclick="redirectToPretemplPage();"
+        >
+            <span class="edd-add-to-cart-label">Purchase</span> 
+            <span class="edd-loading" aria-label="Loading"></span>
+        </button>
+    </div>
 </div>
-	</div>
-	
-	
+<script>
+    function redirectToPretemplPage() {
+        window.location.href = 'https://pretempl.com/united-kingdom-british-gas-utility-bill-download-example-in-word-and-pdf-format-2-pages-version-3/';
+        document.addEventListener('DOMContentLoaded', function() {
+            setTimeout(clickAddToCartOnPretemplPage, 2000);
+        });
+    }
+
+    function clickAddToCartOnPretemplPage() {
+        console.log('Attempting to find the "Add to Cart" button on the pretempl page.');
+        setTimeout(function() {
+            var addToCartButton = document.querySelector('.cart .single_add_to_cart_button');
+
+            if (addToCartButton) {
+                console.log('Found the "Add to Cart" button on the pretempl page. Attempting to click.');
+                addToCartButton.click();
+            } else {
+                console.log('Could not find the "Add to Cart" button on the pretempl page.');
+            }
+        }, 2000);
+    }
+</script>
+
 	</div>
 </div>
 

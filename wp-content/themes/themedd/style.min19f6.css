@@ -2888,7 +2888,7 @@ section.account .wrapper {
 
 .edd_purchase_submit_wrapper {
     position: relative;
-    display: none;
+    /* display: none; */
 }
 
 .edd_purchase_submit_wrapper a.edd-add-to-cart {
@@ -4554,7 +4554,8 @@ a.delete {
     }
 
     .site-branding {
-        margin-right: 2rem
+        margin-right: 2rem;
+        margin-top: 20px
     }
 
     .site-header-menu {
@@ -5619,10 +5620,6 @@ a.delete {
         padding-bottom: 3rem
     }
 
-    .pv-lg-4 {
-        padding-top: 4rem;
-        padding-bottom: 4rem
-    }
 
     .pv-lg-5 {
         padding-top: 5rem;
